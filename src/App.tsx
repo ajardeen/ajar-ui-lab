@@ -1,18 +1,29 @@
-import { Button } from "@/components/ui/button"
+import { QrCode, Sparkle } from "lucide-react"
+import { Hyperlink } from "./components/ajar-ui/hyperlink"
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
+    <div className="flex min-h-svh bg-background p-6 text-foreground">
       <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
+        <Hyperlink
+          startIcon={<QrCode className="text-amber-500" />}
+          endIcon={<Sparkle className="text-amber-500" />}
+          href="https://ajardeen.netlify.app/"
+         
+          variant={"pill"}
+          className=""
+        >
+          https://ajardeen.netlify.app/
+        </Hyperlink>
+
+        {/* Uses the fallback standard layout configuration outline token */}
+        <Hyperlink
+          startIcon={<QrCode className="text-blue-500" />}
+          href="#"
+          variant={"outline"}
+        >
+          ajardeen
+        </Hyperlink>
       </div>
     </div>
   )
