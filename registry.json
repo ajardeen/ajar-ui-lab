@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "ajar-ui",
+  "homepage": "https://github.com/ajardeen/ajar-ui-lab",
+  "items": [
+    {
+      "name": "hyperlink",
+      "type": "registry:ui",
+      "title": "Hyperlink",
+      "description": "An interactive, styled anchor link with custom variants including an ambient glow effect.",
+      "dependencies": ["class-variance-authority", "clsx", "tailwind-merge"],
+      "files": [
+        {
+          "path": "src/components/ajar-ui/hyperlink.tsx",
+          "type": "registry:ui",
+          "target": "components/ajar-ui/hyperlink.tsx"
+        }
+      ]
+    }
+  ]
+}
